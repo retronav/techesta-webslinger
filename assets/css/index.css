@@ -1,0 +1,74 @@
+body {
+  /* Hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* Hide scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+.hero-div {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../media/22.jpeg");
+  box-shadow: inset 0 0 5em 1em rgb(124, 124, 124);
+}
+
+.hero-div .title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  font-weight: 400 !important;
+  color: #ff0000;
+  animation: slide-bottom-top-text 1.5s ease both;
+  animation-delay: 0.75s;
+}
+@media only screen and (max-width: 576px) {
+  .hero-div .title {
+    font-size: 12vw;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  }
+}
+
+.hero-div .subtitle {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  animation: slide-bottom-top-text 1.5s ease both;
+  animation-delay: 1.25s;
+}
+
+#books-section {
+  color: #ffffff;
+  box-shadow: inset 0 0 5em 1em #000;
+  background: url("../media/19.jpg");
+  background-position: top;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.book-info .card-title {
+  position: relative;
+  font-style: italic;
+  cursor: pointer;
+}
+.book-info .card-title .cross {
+  position: absolute;
+  right: 0;
+}
+.book-info .card-title.collapsed .cross {
+  transform: rotateZ(0deg);
+}
+.book-info .card-title .cross {
+  transform: rotateZ(45deg);
+  font-style: normal !important;
+  transition: transform 0.25s ease-in-out;
+}

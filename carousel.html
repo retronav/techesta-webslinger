@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APJ Abdul Kalam - Carousel</title>
+    <meta
+      name="description"
+      content="A website which pays tribute to the Missile Man, Dr. APJ Abdul Kalam."
+    />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/shared.css" />
+    <link rel="stylesheet" href="./assets/css/carousel-index.css" />
+    <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar fixed-sticky navbar-expand-md navbar-light bg-light">
+      <span class="navbar-brand">APJ Abdul Kalam</span>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link books" href="#">
+              Books
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./quotes.html">
+              Quotes
+            </a>
+          </li>
+          <li class="nav-item  active">
+            <a class="nav-link" href="./carousel.html">
+              Carousel
+            </a>
+          </li>
+          <li class="nav-item">
+            <button
+              type="button"
+              class="nav-link btn btn-link"
+              data-toggle="modal"
+              data-target="#contactUsModal"
+            >
+              Contact Us
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              type="button"
+              class="nav-link btn btn-link"
+              data-toggle="modal"
+              data-target="#creditsModal"
+            >
+              Credits
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <audio hidden id="carouselAudio">
+      <source
+        src="./assets/media/AUDIO-2020-08-15-16-17-38.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <div id="hero-carousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-block carousel-img h-100 w-100" data-img="5.JPG">
+            <span>
+              Avul Pakir Jainulabdeen Abdul Kalam 15 October 1931 – 27 July
+              2015) was an Indian aerospace scientist and politician who served
+              as the 11th President of India from 2002 to 2007. He was born and
+              raised in Rameswaram, Tamil Nadu and studied physics and aerospace
+              engineering. He spent the next four decades as a scientist and
+              science administrator, mainly at the Defence Research and
+              Development Organisation (DRDO) and Indian Space Research
+              Organisation (ISRO) and was intimately involved in India's
+              civilian space programme and military missile development efforts.
+              He thus came to be known as the Missile Man of India for his work
+              on the development of ballistic missile and launch vehicle
+              technology.
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block carousel-img h-100 w-100" data-img="4.jpg">
+            <span>
+              After graduating from the Madras Institute of Technology in 1960,
+              Kalam joined the Aeronautical Development Establishment of the
+              Defence Research and Development Organisation (by Press
+              Information Bureau, Government of India) as a scientist after
+              becoming a member of the Defence Research & Development Service
+              (DRDS). He started his career by designing a small hovercraft, but
+              remained unconvinced by his choice of a job at DRDO. In 1969,
+              Kalam was transferred to the Indian Space Research Organisation
+              (ISRO) where he was the project director of India's first
+              Satellite Launch Vehicle (SLV-III) which successfully deployed the
+              Rohini satellite in near-earth orbit in July 1980; Kalam had first
+              started work on an expandable rocket project independently at DRDO
+              in 1965 Kalam served as the Chief Scientific Adviser to the Prime
+              Minister and Secretary of the Defence Research and Development
+              Organisation from July 1992 to December 1999. The Pokhran-II
+              nuclear tests were conducted during this period in which he played
+              an intensive political and technological role.
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block carousel-img h-100 w-100" data-img="23.jpg">
+            <span>
+              Kalam received 7 honorary doctorates from 40 universities. The
+              Government of India honoured him with the Padma Bhushan in 1981
+              and the Padma Vibhushan in 1990 for his work with ISRO and DRDO
+              and his role as a scientific advisor to the Government. In 1997,
+              Kalam received India's highest civilian honour, the Bharat Ratna,
+              for his contribution to the scientific research and modernisation
+              of defence technology in India. In 2013, he was the recipient of
+              the Von Braun Award from the National Space Society "to recognize
+              excellence in the management and leadership of a space-related
+              project". In 2012, Kalam was ranked number 2 in Outlook India's
+              poll of the Greatest Indian.
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block carousel-img h-100 w-100" data-img="12.jpg">
+            <span>
+              Kalam served as the 11th President of India, succeeding K. R.
+              Narayanan. He won the 2002 presidential election with an electoral
+              vote of 922,884, surpassing the 107,366 votes won by Lakshmi
+              Sahgal. His term lasted from 25 July 2002 to 25 July 2007. On 10
+              June 2002, the National Democratic Alliance (NDA) which was in
+              power at the time, expressed that they would nominate Kalam for
+              the post of President,and both the Samajwadi Party and the
+              Nationalist Congress Party backed his candidacy. Kalam said of the
+              announcement of his candidature: I am really overwhelmed.
+              Everywhere both in Internet and in other media, I have been asked
+              for a message. I was thinking what message I can give to the
+              people of the country at this juncture.
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block carousel-img h-100 w-100" data-img="28.jpg">
+            <span>
+              On 27 July 2015, Kalam travelled to Shillong to deliver a lecture
+              on "Creating a Livable Planet Earth" at the Indian Institute of
+              Management Shillong. While climbing a flight of stairs, he
+              experienced some discomfort, but was able to enter the auditorium
+              after a brief rest. At around 6:35 p.m. IST, only five minutes
+              into his lecture, he collapsed. He was rushed to the nearby
+              Bethany Hospital in a critical condition; upon arrival, he lacked
+              a pulse or any other signs of life. Despite being placed in the
+              intensive care unit, Kalam was confirmed dead of a sudden cardiac
+              arrest at 7:45 p.m. IST.
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block carousel-img h-100 w-100" data-img="27.jpg">
+            <span>
+              The Dr. A.P.J. Abdul Kalam National Memorial was built in memory
+              of Kalam by the DRDO in Pei Karumbu, in the island town of
+              Rameswaram, Tamil Nadu. It was inaugurated by Prime Minister
+              Narendra Modi in July 2017. On display are the replicas of rockets
+              and missiles which Kalam had worked with. Acrylic paintings about
+              his life are also displayed along with hundreds of portraits
+              depicting the life of the mass leader. There is a statue of Kalam
+              in the entrance showing him playing the Veena. There are two other
+              smaller statues of the leader in sitting and standing posture.
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="d-block carousel-img no-black h-100 w-100"
+            data-img="6.jpg"
+          ></div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="d-block carousel-img no-black h-100 w-100"
+            data-img="7.jpg"
+          ></div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="d-block carousel-img no-black h-100 w-100"
+            data-img="17.jpg"
+          ></div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="d-block carousel-img no-black h-100 w-100"
+            data-img="20.jpg"
+          ></div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="d-block carousel-img no-black h-100 w-100"
+            data-img="26.jpg"
+          ></div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block carousel-img carousel-end no-black h-100 w-100">
+            <h1 class="display-2">Thank You For Playing the Carousel!!</h1>
+            <p>
+              <a href="./index.html" class="btn btn-success">Homepage</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+      class="modal fade"
+      id="contactUsModal"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactUsModalLabel">Contact Us</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Made with <i>love</i> and <i>pride</i> by</p>
+            <h3>Reliance Foundation School, Lodhivali (Eng. Med)</h3>
+            <h4>Pranav Karawale</h4>
+            <a href="https://github.com/obnoxiousnerd">
+              <img
+                src="./assets/media/icons/github.svg"
+                alt="GitHub"
+                class="github-svg px-1"
+                width="32"
+              />
+            </a>
+            <a href="mailto:Pranav.132013007@rfs.edu.in">
+              <img
+                src="./assets/media/icons/microsoftoutlook.svg"
+                alt="Outlook"
+                class="outlook-svg px-1"
+                width="32"
+              />
+            </a>
+            <br />
+            <br />
+            <h4>Hasshya Krishnamoorthy</h4>
+            <a href="https://www.instagram.com/hasshya_1530/">
+              <img
+                src="./assets/media/icons/instagram.svg"
+                alt="instagram"
+                class="instagram-logo px-1"
+                width="32"
+              />
+            </a>
+            <a href="mailto:Hasshya.132013008@rfs.edu.in">
+              <img
+                src="./assets/media/icons/microsoftoutlook.svg"
+                alt="Outlook"
+                class="outlook-logo px-1"
+                width="32"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div
+        class="modal fade"
+        id="carouselInfoModal"
+        data-backdrop="static"
+        data-keyboard="false"
+        tabindex="-1"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">The Carousel</h5>
+            </div>
+            <div class="modal-body">
+              This carousel contains selected images of APJ Abdul Kalam along
+              with some information/facts about him. To see the text, simply
+              hover/touch on the image. While playing, a music track will also
+              play with the carousel.
+            </div>
+            <div class="modal-footer">
+              <a
+                href="./index.html"
+                id="home-btn"
+                type="button"
+                class="btn btn-secondary"
+              >
+                Take me to home
+              </a>
+              <button
+                id="start-btn"
+                type="button"
+                class="btn btn-success"
+                data-dismiss="modal"
+              >
+                Start the carousel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+      class="modal fade"
+      id="creditsModal"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactUsModalLabel">Credits</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Thank You! <b>DAV Sreshtha Vihar, Delhi</b></p>
+            <p>
+              Credits:
+              <b>
+                Google,
+                <a href="https://stackoverflow.com">Stack Overflow</a>,
+                <a href="https://getbootstrap.com">Bootstrap Website</a>,
+                <a href="https://jquery.com">jQuery</a>
+              </b>
+            </p>
+            <p>
+              Presented By:
+              <br />
+              <h4>Reliance Foundation School, Lodhivali (Eng. Med)</h4>
+              <br />
+              <h5>Pranav Karawale</h5>
+              <br />
+              <h5>Hasshya Krishnamoorthy</h5>
+              <h6>Class XI Science</h6>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="./assets/js/shared.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+  </body>
+</html>

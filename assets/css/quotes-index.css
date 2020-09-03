@@ -1,0 +1,90 @@
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.hero-div {
+  background: linear-gradient(
+    112.35deg,
+    rgb(255, 123, 0) 15.74%,
+    rgba(255, 255, 255, 0.51) 52.4%,
+    rgba(5, 255, 0, 0.52) 83.04%
+  );
+  background-size: cover;
+}
+@media only screen and (min-width: 768px) {
+  .quotes {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    transform: translate(0, 0);
+    height: calc(100vh - 56px) !important;
+  }
+  .text-quote {
+    position: relative;
+    max-width: 33.3%;
+    max-height: 33.3%;
+  }
+  .text-quote.start {
+    top: 0;
+    left: 0;
+  }
+  .text-quote.end {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .quotes {
+    min-height: 100% !important;
+  }
+  .quote-card {
+    display: flex;
+    width: 80%;
+  }
+  .quote-card:nth-child(odd) {
+    margin-top: 0 !important;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .text-quote.end {
+    margin-bottom: 0 !important;
+  }
+}
+
+.quote-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.quote-card .card-text {
+  font-style: italic;
+}
+
+.quote-card .card-text .book {
+  text-align: right;
+}
+
+.quotes {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.text-quote {
+  font-style: italic;
+  animation: fade-in 1.5s ease both;
+  animation-delay: 0.9s;
+}
+
+.quote-card {
+  animation: slide-bottom-top 1.2s ease both;
+}
+
+.card-2 {
+  animation-delay: 0.3s;
+}
+.card-3 {
+  animation-delay: 0.6s;
+}
